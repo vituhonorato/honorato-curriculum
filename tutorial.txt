@@ -5,3 +5,8 @@
 3: add scripts em package.json
 
 4|: criar pages/index.js e criar um component e exportar
+
+5: criar tambem dentro do index.js uma função getServerSideProps pra mandar a api do github(repos) 
+https://api.github.com/users/vituhonorato/repos?sort=update 
+com os repositorios atraves de props 
+a função pra ser renderizada no componente Index
