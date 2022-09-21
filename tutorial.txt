@@ -23,3 +23,7 @@ SEPARANDO O BACK DO FRONT
 9: criar pasta utils e por um getUser.js dentro dela por a parte do back e configurar o codigo de forma dinâmica com template string usando o username depois importar o back pro index.js, entretanto o backend ainda está acoplado ao front no arquivo index.js
 
 10: criar dentro de pages api/getUser.js 
+
+11: adicionar fonte ao projeto pegar a font no google font atraves do import depois em _app.js envolver o <Compente> em <React.Fragment> e entre os por{` import da font`} entre teplate string e chaves, em seguida no arquivo tailwind.js add em theme:  fontFamily:{
+      sans: ['"Titillium Web"']
+    } assim todo o projeto vai carregar essa font como principal
