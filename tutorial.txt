@@ -12,3 +12,9 @@ com os repositorios atraves de props
 a função pra ser renderizada no componente Index
 
 6: Pra filtra repositorios a serem renderizados  usar filter na função , usei exemplo do fork mas poder sr qualquer outro dados a ser filtrado usei tambem o filtro pra NÃO mandar os repositorios selecionados  e por ultimo um .map() pra enviar apenas os dados decalarados pra a aplicação ficar mais leve
+
+7: APLICANDO ESTILOS COM TAILWIND
+instalar tailwind seguindo a documentação oficial : 
+https://tailwindcss.com/docs/guides/nextjs
+
+8: criar _app.js com componente React MyAPp, pra rodar o tailwind nele gerando estilos em todas as paginas

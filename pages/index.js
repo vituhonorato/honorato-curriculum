@@ -1,16 +1,17 @@
 
 import React from 'react'
 
-const Index = (props) => {
+const Index = ({repos, user}) => {
     return(
         <>
-        <div>
-            <h1>Welcome!</h1>
-            <div>{props.currentDate}</div>
-            <pre>{props.repos.map(repo => {
+        <div className='container mx-auto' >
+            <h1 className='text-5xl'>Olá, eu sou João Victor Honorato</h1>
+            <p>Github stats: public repos: {user.public_repos} / public_gists: {user.public_gists}</p>
+            <h2 className='font-bold text-3xl'>Meus repositorios</h2>
+            <pre>{repos.map(repo => {
                 return(
-                    <div key={repo.id}>
-                        <h3>{repo.full_name}</h3>
+                    <div className='rounded bg-gray-200 m-8 p-4 hover:shadow-xl' key={repo.id}>
+                        <h3 className='font-bold'>{repo.full_name}</h3>
                         <p>Language: {repo.language} / stars: {repo.stargazers_count}</p>
                     </div>
                 )
@@ -23,8 +24,11 @@ const Index = (props) => {
 export async function getServerSideProps(context){
     //catch API
     const resRepos = await fetch('https://api.github.com/users/vituhonorato/repos?sort=update')
+    const resUser = await fetch('https://api.github.com/users/vituhonorato')
+    
     //turn API in JSON
     const originalRepos = await resRepos.json()
+    const user = await resUser.json()
 
     //repositories list
     const dontShowRepos = ['']
@@ -50,7 +54,8 @@ export async function getServerSideProps(context){
     return {
         props: {
             currentDate: new Date().toString(),
-            repos
+            repos,
+            user
             
             
            
