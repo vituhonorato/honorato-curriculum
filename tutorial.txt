@@ -10,3 +10,5 @@
 https://api.github.com/users/vituhonorato/repos?sort=update 
 com os repositorios atraves de props 
 a função pra ser renderizada no componente Index
+
+6: Pra filtra repositorios a serem renderizados  usar filter na função , usei exemplo do fork mas poder sr qualquer outro dados a ser filtrado usei tambem o filtro pra NÃO mandar os repositorios selecionados  e por ultimo um .map() pra enviar apenas os dados decalarados pra a aplicação ficar mais leve
