@@ -18,3 +18,8 @@ instalar tailwind seguindo a documentação oficial :
 https://tailwindcss.com/docs/guides/nextjs
 
 8: criar _app.js com componente React MyAPp, pra rodar o tailwind nele gerando estilos em todas as paginas
+
+SEPARANDO O BACK DO FRONT
+9: criar pasta utils e por um getUser.js dentro dela por a parte do back e configurar o codigo de forma dinâmica com template string usando o username depois importar o back pro index.js, entretanto o backend ainda está acoplado ao front no arquivo index.js
+
+10: criar dentro de pages api/getUser.js 
