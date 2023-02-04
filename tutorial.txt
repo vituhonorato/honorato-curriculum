@@ -13,13 +13,16 @@ a função pra ser renderizada no componente Index
 
 6: Pra filtra repositorios a serem renderizados  usar filter na função , usei exemplo do fork mas poder sr qualquer outro dados a ser filtrado usei tambem o filtro pra NÃO mandar os repositorios selecionados  e por ultimo um .map() pra enviar apenas os dados decalarados pra a aplicação ficar mais leve
 
-7: APLICANDO ESTILOS COM TAILWIND
+7:APLICANDO ESTILOS COM TAILWIND
+
 instalar tailwind seguindo a documentação oficial : 
 https://tailwindcss.com/docs/guides/nextjs
 
 8: criar _app.js com componente React MyAPp, pra rodar o tailwind nele gerando estilos em todas as paginas
 
+
 SEPARANDO O BACK DO FRONT
+
 9: criar pasta utils e por um getUser.js dentro dela por a parte do back e configurar o codigo de forma dinâmica com template string usando o username depois importar o back pro index.js, entretanto o backend ainda está acoplado ao front no arquivo index.js
 
 10: criar dentro de pages api/getUser.js 
@@ -27,3 +30,6 @@ SEPARANDO O BACK DO FRONT
 11: adicionar fonte ao projeto pegar a font no google font atraves do import depois em _app.js envolver o <Compente> em <React.Fragment> e entre os por{` import da font`} entre teplate string e chaves, em seguida no arquivo tailwind.js add em theme:  fontFamily:{
       sans: ['"Titillium Web"']
     } assim todo o projeto vai carregar essa font como principal
+ 
+
+

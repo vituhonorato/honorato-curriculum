@@ -31,7 +31,7 @@ export async function getServerSideProps(context){
     const user = await resUser.json()
 
     //repositories list
-    const dontShowRepos = ['']
+    const dontShowRepos = ['vituhonorato/NewJava', 'vituhonorato/angular-routes','vituhonorato/java-test','vituhonorato/java_test', 'vituhonorato/javascript-questoes','vituhonorato/start-angular','vituhonorato/debounce-search', 'vituhonorato/vituhonorato','vituhonorato/teste', ]
 
     //dont show forks repositories
     const isNotFork = repo => !repo.fork
@@ -49,7 +49,7 @@ export async function getServerSideProps(context){
     
 
     //Filter
-    const repos = originalRepos.filter(dontShowFilter).map(extractData)
+    const repos = originalRepos.filter(dontShowFilter).filter(isNotFork).map(extractData)
 
     return {
         props: {

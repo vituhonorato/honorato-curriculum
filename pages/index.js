@@ -8,7 +8,7 @@ const Index = ({repos, user}) => {
         <>
         <div className='container mx-auto' >
             <h1 className='text-5xl'>Olá, eu sou João Victor Honorato</h1>
-            <p>Github stats: public repos: {user.public_repos} / public_gists: {user.public_gists}</p>
+            <p>Github stats: Public repos: {user.public_repos} / Seguidores: {user.followers} / Seguindo: {user.following}</p>
             <h2 className='font-bold text-3xl'>Meus repositorios</h2>
             <pre>{repos.map(repo => {
                 return(
@@ -27,7 +27,7 @@ const Index = ({repos, user}) => {
 export async function getServerSideProps(context){
     
     //backend importado de de utils/getUser
-    const {repos, user} = await getUser('vituhonorato')
+    const {repos, user} = await getUser('vituhonorato') 
 
 
     return {

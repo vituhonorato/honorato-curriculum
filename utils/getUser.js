@@ -1,4 +1,5 @@
 const getUser = async(username) => {
+    try{
      //catch API
     const resRepos = await fetch(`https://api.github.com/users/${username}/repos?sort=update`)
      const resUser = await fetch('https://api.github.com/users/'+ username)
@@ -8,7 +9,8 @@ const getUser = async(username) => {
      const user = await resUser.json()
  
      //repositories list
-     const dontShowRepos = ['']
+     const dontShowRepos = ['vituhonorato/NewJava', 'vituhonorato/angular-routes','vituhonorato/java-test','vituhonorato/java_test', 'vituhonorato/javascript-questoes','vituhonorato/start-angular','vituhonorato/debounce-search', 'vituhonorato/vituhonorato','vituhonorato/teste', ]
+     
  
      //dont show forks repositories
      const isNotFork = repo => !repo.fork
@@ -26,7 +28,8 @@ const getUser = async(username) => {
      
  
      //Filter
-     const repos = originalRepos.filter(dontShowFilter).map(extractData)
+     const repos = originalRepos.filter(dontShowFilter).filter(isNotFork).map(extractData)
+     
  
      return {
        
@@ -37,6 +40,24 @@ const getUser = async(username) => {
              
        
      }
+    }catch{
+        const test = ['']
+        const user = [{ "public_repos": 78,
+        "public_gists": 0,
+        "followers": 152,
+        "following": 55}]
+        const repos = test
+        return {
+       
+             
+            repos,
+            user
+            
+            
+      
+    }
+        
+    }
 }
 
 export default getUser
