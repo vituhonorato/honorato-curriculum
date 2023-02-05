@@ -12,18 +12,9 @@ const Index = ({repos, user}) => {
         <>
         {repos && user && 
         <div>
-         <div className="container mx-auto " >
-            <div className='grid grid-cols-4 gap-4'>
-                <div>
-                    <h1 className="text-3xl pt-3 bg-neutral-50">Hi There, I'm  Victor Honorato</h1><br/>
-                    <h2 className='font-bold  text-5xl bg-neutral-50'>Web Developer</h2>
-                </div>
-
-                <div>2</div>
-
-                <div>3</div>
-
-                <div className="grid grid-flow-col auto-cols-max   ">
+         <div className="container mx-auto bg-neutral-50 opacity-75 mt-8 mb-8 rounded-lg " >
+            <div className=''>
+                <div className="grid grid-flow-col auto-cols-max justify-end py-3 px-3  space-x-1">
                     <div className='pt-2'>
                         <Link href="https://github.com/vituhonorato" >
                             <a target="_blank">
@@ -32,7 +23,7 @@ const Index = ({repos, user}) => {
                            
                         </Link>
                     </div>
-                    <div className='pt-3 '>
+                    <div className='pt-3 pr-1'>
                     
                     <Link href="https://www.linkedin.com/in/jvmh/" target="_blank">
                         <a target="_blank">
@@ -51,11 +42,27 @@ const Index = ({repos, user}) => {
                     </Link>
                    </div>
                 
+                 </div>
                 </div>
-                <div>5</div>
-                <div className=''><img className='rounded-full bg-white ' src='/images/profile.png' alt='github' height="600px" width="600px"/></div>
-                <div>7</div>
-                    <div> 
+                <div className='grid grid-cols-1 gap-4 flex'>
+                    <div>
+                        <h1 className="text-3xl pt-3 bg-neutral-50 text-center">Hi There, I'm  Victor Honorato</h1><br/>
+                        <h2 className='font-bold  text-5xl bg-neutral-50 text-center'>Web Developer</h2>
+                    </div>
+
+                    <div className='grid justify-items-center'>
+                        <img className='rounded-full bg-white  ' src='/images/profile.png' alt='github' height="400px" width="400px"/>
+                        
+                    </div>
+
+                    <div>3</div>
+
+                
+                    <div>4</div>
+                    
+                    <div className='text-center'>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                    <div className='text-center'> 
                         <p>
                         Public repos: {user.public_repos} 
                         </p>
@@ -64,27 +71,27 @@ const Index = ({repos, user}) => {
                         </p>
                     </div>
 
-                <div className="grid grid-cols-6 gap-0.5">
-                    <div><img src='/images/html.png' alt='html' height="50px" width="50px"/></div>
-                    <div><img src='/images/css.png' alt='css' height="50px" width="50px"/></div>
-                    <div><img src='/images/js.png' alt='js' height="50px" width="50px"/></div>
-                    <div><img src='/images/typescript.png' alt='typescript' height="50px" width="50px"/></div>
-                    <div><img src='/images/react.png' alt='react' height="50px" width="50px"/></div>
-                    <div><img src='/images/angular.png' alt='angular' height="50px" width="50px"/></div>
-                    <div className='py-4'><img src='/images/tailwind.png' alt='tailwind' height="50px" width="50px"/></div>
-                    <div><img src='/images/node-js.png' alt='node' height="50px" width="50px"/></div>
-                    <div><img src='/images/nest.png' alt='nest' height="50px" width="50px"/></div>
-                    <div><img src='/images/graphql.png' alt='graphql' height="50px" width="50px"/></div>
-                    <div><img src='/images/rest.png' alt='rest' height="50px" width="50px"/></div>
-                    <div><img src='/images/postgresql.png' alt='postgresql' height="50px" width="50px"/></div>
-                    
-                </div>
+                    <div className="flex flex-row  justify-center ">
+                        <div ><img src='/images/html.png' alt='html' height="50px" width="50px"/></div>
+                        <div><img src='/images/css.png' alt='css' height="50px" width="50px"/></div>
+                        <div><img src='/images/js.png' alt='js' height="50px" width="50px"/></div>
+                        <div><img src='/images/typescript.png' alt='typescript' height="50px" width="50px"/></div>
+                        <div><img src='/images/react.png' alt='react' height="50px" width="50px"/></div>
+                        <div><img src='/images/angular.png' alt='angular' height="50px" width="50px"/></div>
+                        <div className='py-4'><img src='/images/tailwind.png' alt='tailwind' height="50px" width="50px"/></div>
+                        <div><img src='/images/node-js.png' alt='node' height="50px" width="50px"/></div>
+                        <div><img src='/images/nest.png' alt='nest' height="50px" width="50px"/></div>
+                        <div><img src='/images/graphql.png' alt='graphql' height="50px" width="50px"/></div>
+                        <div><img src='/images/rest.png' alt='rest' height="50px" width="50px"/></div>
+                        <div><img src='/images/postgresql.png' alt='postgresql' height="50px" width="50px"/></div>
+                        
+                    </div>
                 
             </div>
             
             
             
-            <h2 className='font-medium text-center text-2xl'>My Repositories</h2>
+            {/* <h2 className='font-medium text-center text-2xl'>My Repositories</h2>
             <div>{repos.map(repo => {
                 return(
                 <Link href={url + repo.full_name } >
@@ -99,7 +106,7 @@ const Index = ({repos, user}) => {
                     </Link>
                 )
               })}
-            </div>
+            </div> */}
           </div>
         </div>}
         { !repos && !user && <h1>ola</h1>}
