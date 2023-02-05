@@ -15,7 +15,7 @@ const Index = ({repos, user}) => {
          <div className="container mx-auto bg-neutral-50 opacity-75 mt-8 mb-8 rounded-lg " >
             <div className=''>
                 <div className="grid grid-flow-col auto-cols-max justify-end py-3 px-3  space-x-1">
-                    <div className='pt-2'>
+                    <div className='pt-2 hover:opacity-75'>
                         <Link href="https://github.com/vituhonorato" >
                             <a target="_blank">
                                 <img src='/images/github.png' alt='github' height="60px" width="60px"/>
@@ -27,12 +27,12 @@ const Index = ({repos, user}) => {
                     
                     <Link href="https://www.linkedin.com/in/jvmh/" target="_blank">
                         <a target="_blank">
-                            <img src='/images/linkedin.png' alt='linkedin' height="50px" width="50px"/>
+                            <img className='hover:opacity-75' src='/images/linkedin.png' alt='linkedin' height="50px" width="50px"/>
                         </a>
                     
                     </Link>
                    </div> 
-                   <div className='pt-3'>
+                   <div className='pt-3 hover:opacity-75'>
                     
                     <Link href="https://api.whatsapp.com/send?phone=5571987840407&text=Hi%20There,%20how%20can%20i%20help?" target="_blank">
                         <a target="_blank">
@@ -46,12 +46,12 @@ const Index = ({repos, user}) => {
                 </div>
                 <div className='grid grid-cols-1 gap-4 flex'>
                     <div>
-                        <h1 className="text-3xl pt-3 bg-neutral-50 text-center">Hi There, I'm  Victor Honorato</h1><br/>
-                        <h2 className='font-bold  text-5xl bg-neutral-50 text-center'>Web Developer</h2>
+                        <h1 className="text-4xl pt-3  text-center">Hi There, I'm  Victor Honorato</h1><br/>
+                        <h2 className='font-bold font-righteous  text-5xl  text-center'>Web Developer</h2>
                     </div>
 
                     <div className='grid justify-items-center'>
-                        <img className='rounded-full bg-white  ' src='/images/profile.png' alt='github' height="400px" width="400px"/>
+                        <img className='rounded-full bg-white  ' src='/images/cartoonperfil1.png' alt='github' height="400px" width="400px"/>
                         
                     </div>
 
@@ -62,13 +62,16 @@ const Index = ({repos, user}) => {
                     
                     <div className='text-center'>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                    <div className='text-center'> 
+                    {/* <div className='text-center'> 
                         <p>
                         Public repos: {user.public_repos} 
                         </p>
                         <p>
                         Followers: {user.followers} <br/> Following: {user.following }
                         </p>
+                    </div> */}
+                    <div className='text-center font-normal font-righteous  text-2xl '>
+                        <h2>My stacks</h2>
                     </div>
 
                     <div className="flex flex-row  justify-center ">

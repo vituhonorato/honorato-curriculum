@@ -6,7 +6,8 @@ module.exports = {
   ],
   theme: {
     fontFamily:{
-      sans: ['"Titillium Web"']
+      sans: ['"Titillium Web"'],
+      righteous: ['"Righteous"']
     },
     extend: {},
   },

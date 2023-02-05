@@ -27,7 +27,7 @@ const Index = ({repos, user}) => {
                 return(
                     <Link href={url + repo.full_name } >
                       <a target="_blank">
-                        <div className='rounded bg-gray-200 m-8 p-4 hover:shadow-xl opacity-75' key={repo.id}>
+                        <div className='rounded bg-gray-200 m-8 p-4 hover:shadow-xl opacity-75 hover:opacity-100 ' key={repo.id}>
                             <h3 className='font-bold'>{repo.full_name}</h3>
                             <p>Language: {repo.language}</p>
                         </div>
