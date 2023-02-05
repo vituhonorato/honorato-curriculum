@@ -8,16 +8,31 @@ const Index = ({repos, user}) => {
         <>
         {repos && user &&
         <div className='container mx-auto' >
-            <h1 className='text-5xl'>My Repositories</h1>
+            <h1 className='text-5xl text-center pt-6'>My Repositories</h1>
+             <div className='grid grid-cols-4 gap-4'>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div><img src='/images/githubcat.png' alt='github' height="600px" width="600px"/></div>
+                <div>Github stats: Public repos: {user.public_repos} <br/>Followers: {user.followers} <br/> Following: {user.following }</div>
+                <div><h2 className='font-bold text-3xl'>Meus repositorios</h2></div>
+             </div>
+            
             <div><p>Github stats: Public repos: {user.public_repos} / Followers: {user.followers} / Following: {user.following }</p></div>
-            <h2 className='font-bold text-3xl'>Meus repositorios</h2>
+            
             <div>{repos.map(repo => {
                 return(
                     <Link href={url + repo.full_name } >
-                    <div className='rounded bg-gray-200 m-8 p-4 hover:shadow-xl' key={repo.id}>
-                        <h3 className='font-bold'>{repo.full_name}</h3>
-                        <p>Language: {repo.language}</p>
-                    </div>
+                      <a target="_blank">
+                        <div className='rounded bg-gray-200 m-8 p-4 hover:shadow-xl opacity-75' key={repo.id}>
+                            <h3 className='font-bold'>{repo.full_name}</h3>
+                            <p>Language: {repo.language}</p>
+                        </div>
+                       </a>
+                 
                     </Link>
                 )
             })}</div>

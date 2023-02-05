@@ -1,6 +1,7 @@
 import React from "react";
 import App from 'next/app'
 import '../styles/global.css'
+import Layout from "../components/layout";
 
 
 class MyApp extends App {
@@ -14,7 +15,12 @@ class MyApp extends App {
                     `}
                   
                   </style>
-                <Component {...pageProps} />
+                  <div className="bg-[url('/images/spacebg.jpg')]">
+                  <Layout>
+
+                    <Component {...pageProps} />
+                  </Layout>
+                  </div>
             </React.Fragment>
         
         ) 

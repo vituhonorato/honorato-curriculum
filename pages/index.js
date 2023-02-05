@@ -10,15 +10,21 @@ const Index = ({repos, user}) => {
     return(
         
         <>
-        {repos && user && <div>
+        {repos && user && 
+        <div>
          <div className="container mx-auto " >
             <div className='grid grid-cols-4 gap-4'>
                 <div>
-                    <h1 className="text-3xl ">Hi There, I'm  Victor Honorato</h1><br/><h2 className='font-bold  text-5xl'>Web Developer</h2>
+                    <h1 className="text-3xl pt-3 bg-neutral-50">Hi There, I'm  Victor Honorato</h1><br/>
+                    <h2 className='font-bold  text-5xl bg-neutral-50'>Web Developer</h2>
                 </div>
 
-                 <div className="grid grid-rows-3 grid-flow-col gap-4">
-                    <div className='row-span-3'>
+                <div>2</div>
+
+                <div>3</div>
+
+                <div className="grid grid-flow-col auto-cols-max   ">
+                    <div className='pt-2'>
                         <Link href="https://github.com/vituhonorato" >
                             <a target="_blank">
                                 <img src='/images/github.png' alt='github' height="60px" width="60px"/>
@@ -26,7 +32,7 @@ const Index = ({repos, user}) => {
                            
                         </Link>
                     </div>
-                    <div className='col-span-9'>
+                    <div className='pt-3 '>
                     
                     <Link href="https://www.linkedin.com/in/jvmh/" target="_blank">
                         <a target="_blank">
@@ -34,27 +40,45 @@ const Index = ({repos, user}) => {
                         </a>
                     
                     </Link>
-                </div>
-                   <div>
-                 </div>
-                  
-                </div>
-
-                <div>3</div>
-
-                <div>
-                <p>
-                         Public repos: {user.public_repos} 
-                       </p>
-                       <p>
-                             Followers: {user.followers} <br/> Following: {user.following }
-                        </p>
+                   </div> 
+                   <div className='pt-3'>
+                    
+                    <Link href="https://api.whatsapp.com/send?phone=5571987840407&text=Hi%20There,%20how%20can%20i%20help?" target="_blank">
+                        <a target="_blank">
+                            <img src='/images/whatsapp.png' alt='whatsapp' height="50px" width="50px"/>
+                        </a>
+                    
+                    </Link>
+                   </div>
+                
                 </div>
                 <div>5</div>
-                <div>6</div>
+                <div className=''><img className='rounded-full bg-white ' src='/images/profile.png' alt='github' height="600px" width="600px"/></div>
                 <div>7</div>
-                <div>8</div>
-                <div>9</div>
+                    <div> 
+                        <p>
+                        Public repos: {user.public_repos} 
+                        </p>
+                        <p>
+                        Followers: {user.followers} <br/> Following: {user.following }
+                        </p>
+                    </div>
+
+                <div className="grid grid-cols-6 gap-0.5">
+                    <div><img src='/images/html.png' alt='html' height="50px" width="50px"/></div>
+                    <div><img src='/images/css.png' alt='css' height="50px" width="50px"/></div>
+                    <div><img src='/images/js.png' alt='js' height="50px" width="50px"/></div>
+                    <div><img src='/images/typescript.png' alt='typescript' height="50px" width="50px"/></div>
+                    <div><img src='/images/react.png' alt='react' height="50px" width="50px"/></div>
+                    <div><img src='/images/angular.png' alt='angular' height="50px" width="50px"/></div>
+                    <div className='py-4'><img src='/images/tailwind.png' alt='tailwind' height="50px" width="50px"/></div>
+                    <div><img src='/images/node-js.png' alt='node' height="50px" width="50px"/></div>
+                    <div><img src='/images/nest.png' alt='nest' height="50px" width="50px"/></div>
+                    <div><img src='/images/graphql.png' alt='graphql' height="50px" width="50px"/></div>
+                    <div><img src='/images/rest.png' alt='rest' height="50px" width="50px"/></div>
+                    <div><img src='/images/postgresql.png' alt='postgresql' height="50px" width="50px"/></div>
+                    
+                </div>
                 
             </div>
             
@@ -65,7 +89,7 @@ const Index = ({repos, user}) => {
                 return(
                 <Link href={url + repo.full_name } >
                     <a target="_blank">
-                    <div className='rounded bg-gray-200 m-8 p-4 hover:shadow-xl' key={repo.id}>
+                    <div className='rounded bg-gray-200 m-8 p-4 hover:shadow-xl opacity-75' key={repo.id}>
                         <h3 className='font-bold'>{repo.full_name}</h3>
                         <p>Language: {repo.language}</p>
                     </div>
