@@ -61,17 +61,17 @@ const Index = ({repos, user}) => {
                     <div></div>
                     
                     <div className='text-center text-xl font-semibold'>
-                    Full Stack WEB Developer. Ever
-                        in search of knowledge and
-                        experiences that will add to my
-                        personal development and
-                        contribution to developers
-                        community!
-                        My goal is to participate
-                        scalable corporate projects, contributing to
-                        company growth 
-                        while i gaining know-how on the
-                        programming area.
+                    Full-Stack WEB Developer. Always
+                            looking for knowledge and
+                            experiences that will add to my
+                            personal development and
+                            contribution to the developer
+                            community!
+                            My goal is to participate in scalable
+                            corporate projects, contributing to
+                            the company's growth and at the
+                            same time gaining know-how in the
+                            programming area.
                     </div>
                     {/* <div className='text-center'> 
                         <p>
