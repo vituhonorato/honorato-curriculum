@@ -5,14 +5,14 @@ import getUser from '../utils/getUser'
 
 //FRONTEND
 const Index = ({repos, user}) => {
-    const url = "https://github.com/"
+    //const url = "https://github.com/"
     
     return(
         
         <>
         {repos && user && 
         <div>
-         <div className="container mx-auto bg-neutral-50 opacity-75 mt-8 mb-8 rounded-lg " >
+         <div className="container mx-auto bg-white opacity-75 mt-8 mb-8 rounded-lg " >
             <div className=''>
                 <div className="grid grid-flow-col auto-cols-max justify-end py-3 px-3  space-x-1">
                     <div className='pt-2 hover:opacity-75'>
@@ -60,8 +60,19 @@ const Index = ({repos, user}) => {
                 
                     <div>4</div>
                     
-                    <div className='text-center'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                    <div className='text-center text-xl font-semibold'>
+                    Full Stack WEB Developer. Ever
+                        in search of knowledge and
+                        experiences that will add to my
+                        personal development and
+                        contribution to developers
+                        community!
+                        My goal is to participate
+                        scalable corporate projects, contributing to
+                        company growth 
+                        while i gaining know-how on the
+                        programming area.
+                    </div>
                     {/* <div className='text-center'> 
                         <p>
                         Public repos: {user.public_repos} 

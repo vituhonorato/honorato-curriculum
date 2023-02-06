@@ -30,6 +30,8 @@ SEPARANDO O BACK DO FRONT
 11: adicionar fonte ao projeto pegar a font no google font atraves do import depois em _app.js envolver o <Compente> em <React.Fragment> e entre os por{` import da font`} entre teplate string e chaves, em seguida no arquivo tailwind.js add em theme:  fontFamily:{
       sans: ['"Titillium Web"']
     } assim todo o projeto vai carregar essa font como principal
+
+    Criar paleta de cores independente:  https://tailwindcss.com/docs/customizing-colors
  
 
 
