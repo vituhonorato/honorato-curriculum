@@ -41,6 +41,7 @@ const Index = ({repos, user}) => {
                     
                     </Link>
                    </div>
+                   
                 
                  </div>
                 </div>

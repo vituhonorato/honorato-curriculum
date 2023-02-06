@@ -126,6 +126,17 @@ const Projects = ({repos, user}) => {
                   </div>
                  </a>
                 </Link>
+                <Link href='https://github.com/vituhonorato/meuip'>
+                 <a target="_blank">
+                  <div className='py-2 px-2'>
+                    <div className='text-center'> <h3 className='font-righteous py-1 text-xl'>Convert My Money</h3></div>
+                     <div><img className='rounded bg-white  ' src='/images/convertmymoney1.jpg' alt='convert my money' height="400px" width="400px"/></div>
+                    <div className='text-center'>
+                     <h3 className='text-base font-normal'>Application to convert currency</h3>
+                    </div>
+                  </div>
+                 </a>
+                </Link>
        
             </div>
             
