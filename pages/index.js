@@ -10,7 +10,7 @@ const Index = ({repos, user}) => {
     return(
         
         <>
-        {repos && user && 
+       
         <div>
          <div className="container mx-auto bg-white opacity-75 mt-8 mb-8 rounded-lg " >
             <div className=''>
@@ -55,10 +55,10 @@ const Index = ({repos, user}) => {
                         
                     </div>
 
-                    <div>3</div>
+                    <div></div>
 
                 
-                    <div>4</div>
+                    <div></div>
                     
                     <div className='text-center text-xl font-semibold'>
                     Full Stack WEB Developer. Ever
@@ -122,8 +122,7 @@ const Index = ({repos, user}) => {
               })}
             </div> */}
           </div>
-        </div>}
-        { !repos && !user && <h1>ola</h1>}
+        </div>
         
         </>
     )

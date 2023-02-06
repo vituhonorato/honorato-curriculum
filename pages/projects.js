@@ -11,7 +11,7 @@ const Projects = ({repos, user}) => {
         <>
         
         <div>
-        <div className='bg-white text-center py-3 my-7 rounded-lg'>
+        <div className='text-white text-center py-3 my-7 rounded-lg'>
             <h1 className='font-bold font-righteous  text-5xl'>Projects</h1>
         </div>
          <div className="container mx-auto bg-white opacity-75 mt-8 mb-8 rounded-lg " >

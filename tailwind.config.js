@@ -19,7 +19,7 @@ module.exports = {
       'tahiti': '#3ab7bf',
       'silver': '#ecebff',
       'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca',
+      'red': '#dc2626',
     },
     extend: {},
   },

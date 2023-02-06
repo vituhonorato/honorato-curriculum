@@ -8,20 +8,24 @@ const Index = ({repos, user}) => {
         <>
         {repos && user &&
         <div className='container mx-auto' >
-            <h1 className='text-5xl bg-white text-center pt-6'>My Repositories</h1>
-             <div className='grid grid-cols-4 gap-4'>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div><img src='/images/githubcat.png' alt='github' height="600px" width="600px"/></div>
-                <div className='bg-white'>Github stats: Public repos: {user.public_repos} <br/>Followers: {user.followers} <br/> Following: {user.following }</div>
-                <div><h2 className='font-bold bg-white text-3xl'>Meus repositorios</h2></div>
+            <div className='text-white text-center py-3 my-7 rounded-lg'>
+                <h1 className='font-bold font-righteous  text-5xl'>My Repositories</h1>
+            </div>
+            
+             <div className='grid grid-cols-1 gap-4'>
+             
+                <div className='flex flex-row  justify-center space-x-10 '>
+                <div className='text-white text-3xl font-bold font-righteous '>Public repos: <p className='text-tahiti text-8xl'>{user.public_repos} </p></div>
+                <div className='text-white text-3xl font-bold font-righteous'>Followers: <p className='text-tahiti text-8xl' >{user.followers}</p></div>
+                <div className='text-white text-3xl font-bold font-righteous'>Following: <p className='text-tahiti text-8xl'>{user.following }</p></div>
+                </div>
+                
+                <div className='grid justify-items-center'><img src='/images/githubcat.png' alt='github' height="600px" width="600px"/></div>
+                
+                
              </div>
             
-            <div className='bg-white'><p>Github stats: Public repos: {user.public_repos} / Followers: {user.followers} / Following: {user.following }</p></div>
+            
             
             <div>{repos.map(repo => {
                 return(
@@ -38,7 +42,26 @@ const Index = ({repos, user}) => {
             })}</div>
             
         </div> }
-        {!repos && !user && <h1>Vazio</h1>}
+        {!repos && !user && 
+        <div className='max-h-screen'>
+            <h1 className='  font-bold text-center text-white text-3xl my-10'>Ops!</h1>
+            <div className='grid justify-items-center my-10'>
+                <img src='/images/githubcat.png' alt='github' height="600px" width="600px"/>
+            </div>
+
+             <div class=" bg-red border border-red-400 text-white text-center px-4  py-3 my-10 rounded relative" role="alert">
+               <strong class="font-bold text-2xl ">Warning!   </strong>
+                <span class="block sm:inline">    If you are seeing this page it is because the Github API failed.</span>
+                <Link href='/'>
+                   <a>
+                    <div className=' grid justify-items-center  '>
+                    <svg fill="#000000" width="50px" height="50px" viewBox="0 0 200 200" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path d="M160,89.75H56l53-53a9.67,9.67,0,0,0,0-14,9.67,9.67,0,0,0-14,0l-56,56a30.18,30.18,0,0,0-8.5,18.5c0,1-.5,1.5-.5,2.5a6.34,6.34,0,0,0,.5,3,31.47,31.47,0,0,0,8.5,18.5l56,56a9.9,9.9,0,0,0,14-14l-52.5-53.5H160a10,10,0,0,0,0-20Z"/></svg>
+                    </div>
+                  </a>
+             </Link>
+             </div>
+            
+        </div>}
         
         </>
     )
@@ -85,6 +108,17 @@ export async function getServerSideProps(context){
         }
     }
 }catch{
+     const repos = null
+     const user = null
+     return {
+       props:{
+         repos,
+       user
+       }
+       
+     }
+
+    
 
 }
 }
