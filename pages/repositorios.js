@@ -12,12 +12,21 @@ const Index = ({repos, user}) => {
                 <h1 className='font-bold font-righteous  text-5xl'>My Repositories</h1>
             </div>
             
-             <div className='grid grid-cols-1 gap-4'>
+             <div className='grid grid-cols-1 gap-4 justify-items-center'>
              
-                <div className='flex flex-row  justify-center space-x-10 '>
-                <div className='text-white text-3xl font-bold font-righteous '>Public repos: <p className='text-tahiti text-8xl'>{user.public_repos} </p></div>
-                <div className='text-white text-3xl font-bold font-righteous'>Followers: <p className='text-tahiti text-8xl' >{user.followers}</p></div>
-                <div className='text-white text-3xl font-bold font-righteous'>Following: <p className='text-tahiti text-8xl'>{user.following }</p></div>
+                <div className='sm:grid grid-cols-1 gap-4 text-center    lg:flex flex-row  justify-center  text-center'>
+                     <div className='text-white text-center text-3xl font-bold font-righteous '>Public Repos:
+                      <p className='text-tahiti text-8xl'>{user.public_repos} </p>
+                     </div>
+                     <div className='text-white text-center text-3xl font-bold font-righteous'>Followers: 
+                      <p className='text-tahiti text-8xl' >{user.followers}
+                      </p>
+                     </div>
+                      <div className='text-white text-center text-3xl font-bold font-righteous'>
+                            Following: 
+                      <p className='text-tahiti text-8xl'>{user.following }
+                      </p>
+                    </div>
                 </div>
                 
                 <div className='grid justify-items-center'><img src='/images/githubcat.png' alt='github' height="600px" width="600px"/></div>

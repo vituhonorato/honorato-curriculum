@@ -15,7 +15,10 @@ const Projects = ({repos, user}) => {
             <h1 className='font-bold font-righteous  text-5xl'>Projects</h1>
         </div>
          <div className="container mx-auto bg-white opacity-75 mt-8 mb-8 rounded-lg " >
-            <div className='grid grid-cols-4 gap-4 justify-items-center'>
+            <div className=' 
+             sm:grid grid-cols-1 gap-4 justify-items-center
+             lg:grid grid-cols-4 gap-4 justify-items-center'
+             >
                 <Link href='https://github.com/vituhonorato/pokenext'>
                  <a target="_blank">
                   <div className='py-2 px-2'>
