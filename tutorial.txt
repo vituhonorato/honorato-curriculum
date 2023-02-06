@@ -4,6 +4,8 @@
 
 3: add scripts em package.json
 
+4: Pra rodar: NPM RUN DEV
+
 4|: criar pages/index.js e criar um component e exportar
 
 5: criar tambem dentro do index.js uma função getServerSideProps pra mandar a api do github(repos) 
