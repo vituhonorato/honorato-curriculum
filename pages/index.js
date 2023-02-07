@@ -52,7 +52,7 @@ const Index = ({repos, user}) => {
                     </div>
 
                     <div className='grid justify-items-center'>
-                        <img className='rounded-full bg-white  ' src='/images/cartoonperfil1.png' alt='github' height="400px" width="400px"/>
+                        <img className='rounded-full bg-white px-3' src='/images/cartoonperfil1.png' alt='github' height="400px" width="400px"/>
                         
                     </div>
 
@@ -61,7 +61,7 @@ const Index = ({repos, user}) => {
                 
                     <div></div>
                     
-                    <div className='text-center text-xl font-semibold'>
+                    <div className='text-center px-3 text-xl font-semibold'>
                     Full-Stack WEB Developer. Always
                             looking for knowledge and
                             experiences that will add to my
