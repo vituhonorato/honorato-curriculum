@@ -157,7 +157,7 @@ const Projects = ({repos, user}) => {
                     <div className='text-center'> <h3 className='font-righteous py-1 text-xl'>Tabuada</h3></div>
                      <div><img className='rounded bg-white  ' src='/images/tabuada1.jpg' alt='tabuada' height="400px" width="400px"/></div>
                     <div className='text-center'>
-                     <h3 className='text-base font-normal'>Application to show PRO Photos</h3>
+                     <h3 className='text-base font-normal'>Application that shows multiplication tables from 1 to 100</h3>
                     </div>
                   </div>
                  </a>
