@@ -140,11 +140,22 @@ const Projects = ({repos, user}) => {
                   </div>
                  </a>
                 </Link>
-                <Link href='https://github.com/vituhonorato/meuip'>
+                <Link href='https://github.com/vituhonorato/gallery'>
                  <a target="_blank">
                   <div className='py-2 px-2'>
                     <div className='text-center'> <h3 className='font-righteous py-1 text-xl'>Gallery</h3></div>
                      <div><img className='rounded bg-white  ' src='/images/gallery.jpg' alt='galley' height="400px" width="400px"/></div>
+                    <div className='text-center'>
+                     <h3 className='text-base font-normal'>Application to show PRO Photos</h3>
+                    </div>
+                  </div>
+                 </a>
+                </Link>
+                <Link href='https://github.com/vituhonorato/tabuada'>
+                 <a target="_blank">
+                  <div className='py-2 px-2'>
+                    <div className='text-center'> <h3 className='font-righteous py-1 text-xl'>Tabuada</h3></div>
+                     <div><img className='rounded bg-white  ' src='/images/tabuada1.jpg' alt='tabuada' height="400px" width="400px"/></div>
                     <div className='text-center'>
                      <h3 className='text-base font-normal'>Application to show PRO Photos</h3>
                     </div>

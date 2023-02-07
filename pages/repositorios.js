@@ -28,9 +28,11 @@ const Index = ({repos, user}) => {
                       </p>
                     </div>
                 </div>
-                
-                <div className='grid justify-items-center'><img src='/images/githubcat.png' alt='github' height="600px" width="600px"/></div>
-                
+                <Link href="https://github.com/vituhonorato" >
+                  <a target="_blank">
+                   <div className='grid justify-items-center'><img src='/images/githubcat.png' alt='github' height="600px" width="600px"/></div>
+                 </a>
+                </Link>
                 
              </div>
             
@@ -116,7 +118,7 @@ export async function getServerSideProps(context){
            
         }
     }
-}catch{
+} catch{
      const repos = null
      const user = null
      return {
