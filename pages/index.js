@@ -12,13 +12,13 @@ const Index = ({repos, user}) => {
         <>
        
         <div>
-         <div className="container mx-auto bg-white opacity-75 mt-8 mb-8 rounded-lg " >
+         <div className="container mx-auto bg-transparent opacity-75 mt-8 mb-8 rounded-lg " >
             <div className=''>
                 <div className="grid grid-flow-col auto-cols-max justify-end py-3 px-3  space-x-1">
                     <div className='pt-2 hover:opacity-75'>
                         <Link href="https://github.com/vituhonorato" >
                             <a target="_blank">
-                                <img src='/images/github.png' alt='github' height="60px" width="60px"/>
+                                <img className=' bg-white rounded-full' src='/images/github.png' alt='github' height="60px" width="60px"/>
                             </a>
                            
                         </Link>
@@ -47,12 +47,12 @@ const Index = ({repos, user}) => {
                 </div>
                 <div className='grid grid-cols-1 gap-4 flex'>
                     <div>
-                        <h1 className="text-4xl pt-3  text-center">Hi There, I'm  Victor Honorato</h1><br/>
-                        <h2 className='font-bold font-righteous  text-5xl  text-center'>Web Developer</h2>
+                        <h1 className="text-4xl pt-3 text-white  text-center">Hi There, I'm  Victor Honorato</h1><br/>
+                        <h2 className='font-bold font-righteous text-white text-5xl  text-center'>Web Developer</h2>
                     </div>
 
                     <div className='grid justify-items-center'>
-                        <img className='rounded-full bg-white px-3' src='/images/cartoonperfil1.png' alt='github' height="400px" width="400px"/>
+                        <img className='rounded-full bg-transparent px-3' src='/images/cartoonperfil1.png' alt='github' height="400px" width="400px"/>
                         
                     </div>
 
@@ -61,7 +61,7 @@ const Index = ({repos, user}) => {
                 
                     <div></div>
                     
-                    <div className='text-center px-3 text-xl font-semibold'>
+                    <div className='text-center text-white px-3 text-xl font-semibold'>
                     Full-Stack WEB Developer. Always
                             looking for knowledge and
                             experiences that will add to my
@@ -97,7 +97,7 @@ const Index = ({repos, user}) => {
                         <div><img src='/images/node-js.png' alt='node' height="50px" width="50px"/></div>
                         <div><img src='/images/nest.png' alt='nest' height="50px" width="50px"/></div>
                         <div><img src='/images/graphql.png' alt='graphql' height="50px" width="50px"/></div>
-                        <div><img src='/images/rest.png' alt='rest' height="50px" width="50px"/></div>
+                        <div><img className=' bg-white rounded-full py-1' src='/images/rest.png' alt='rest' height="50px" width="50px"/></div>
                         <div><img src='/images/postgresql.png' alt='postgresql' height="50px" width="50px"/></div>
                         
                     </div>

@@ -9,7 +9,7 @@ const Index = ({repos, user}) => {
         {repos && user &&
         <div className='container mx-auto' >
             <div className='text-white text-center py-3 my-7 rounded-lg'>
-                <h1 className='font-bold font-righteous  text-5xl'>My Repositories</h1>
+                <h1 className='font-bold font-righteous px-3 text-5xl'>My Repositories</h1>
             </div>
             
              <div className='grid grid-cols-1 gap-4 justify-items-center'>
@@ -30,7 +30,7 @@ const Index = ({repos, user}) => {
                 </div>
                 <Link href="https://github.com/vituhonorato" >
                   <a target="_blank">
-                   <div className='grid justify-items-center'><img src='/images/githubcat.png' alt='github' height="600px" width="600px"/></div>
+                   <div className='grid justify-items-center opacity-80 hover:opacity-100'><img src='/images/githubcat.png' alt='github' height="600px" width="600px"/></div>
                  </a>
                 </Link>
                 
