@@ -129,7 +129,7 @@ const Projects = ({repos, user}) => {
                   </div>
                  </a>
                 </Link>
-                <Link href='https://github.com/vituhonorato/meuip'>
+                <Link href='https://github.com/vituhonorato/convertmymoney'>
                  <a target="_blank">
                   <div className='py-2 px-2'>
                     <div className='text-center'> <h3 className='font-righteous py-1 text-xl'>Convert My Money</h3></div>
