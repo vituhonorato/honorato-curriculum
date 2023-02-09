@@ -16,7 +16,7 @@ class MyApp extends App {
                     `}
                   
                   </style>
-                  <div className="bg-[url('/images/spacebg.jpg')]">
+                  <div className="bg-[url('/images/textura1.jpg')]">
                   <Layout>
 
                     <Component {...pageProps} />

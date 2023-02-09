@@ -15,7 +15,7 @@ const Index = ({repos, user}) => {
          <div className="container mx-auto bg-transparent opacity-75 mt-8 mb-8 rounded-lg " >
             <div className=''>
                 <div className="grid grid-flow-col auto-cols-max justify-end py-3 px-3  space-x-1">
-                    <div className='pt-2 hover:opacity-75'>
+                    <div className='pt-2 opacity-75  hover:opacity-100'>
                         <Link href="https://github.com/vituhonorato" >
                             <a target="_blank">
                                 <img className=' bg-white rounded-full' src='/images/github.png' alt='github' height="60px" width="60px"/>
@@ -27,12 +27,12 @@ const Index = ({repos, user}) => {
                     
                     <Link href="https://www.linkedin.com/in/jvmh/" target="_blank">
                         <a target="_blank">
-                            <img className='hover:opacity-75' src='/images/linkedin.png' alt='linkedin' height="50px" width="50px"/>
+                            <img className='opacity-75  hover:opacity-100' src='/images/linkedin.png' alt='linkedin' height="50px" width="50px"/>
                         </a>
                     
                     </Link>
                    </div> 
-                   <div className='pt-3 hover:opacity-75'>
+                   <div className='pt-3 opacity-75  hover:opacity-100'>
                     
                     <Link href="https://api.whatsapp.com/send?phone=5571987840407&text=Hi%20There,%20how%20can%20i%20help?" target="_blank">
                         <a target="_blank">
@@ -82,7 +82,7 @@ const Index = ({repos, user}) => {
                         Followers: {user.followers} <br/> Following: {user.following }
                         </p>
                     </div> */}
-                    <div className='text-center font-normal font-righteous  text-2xl '>
+                    <div className='text-center text-white font-normal font-righteous  text-2xl '>
                         <h2>My stacks</h2>
                     </div>
 
