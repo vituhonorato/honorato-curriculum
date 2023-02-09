@@ -19,6 +19,7 @@ module.exports = {
       'midnight': '#2f2435',
       'orange': '#FF6B1A',
       'gray': '#4B4952',
+      'tahiti':'#3ab7bf',
       'graylight': '#CACACA',
       'bubble-gum': '#ff77e9',
       'red': '#dc2626',
