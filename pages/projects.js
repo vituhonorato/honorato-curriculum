@@ -19,6 +19,17 @@ const Projects = ({repos, user}) => {
              sm:grid grid-cols-1 gap-4 justify-items-center 
              lg:grid grid-cols-4 gap-4 justify-items-center'
              >
+                 <Link href='https://github.com/vituhonorato/outfit-store'>
+                 <a target="_blank">
+                  <div className='py-2 px-2 bg-white rounded-lg my-3 opacity-75 hover:opacity-100 '>
+                    <div className='text-center'> <h3 className='font-righteous py-1 text-2xl'>Outfit Store</h3></div>
+                     <div><img className='rounded bg-white  ' src='/images/outfit.jpg' alt='outfit-store' height="400px" width="400px"/></div>
+                    <div className='text-center'>
+                     <h3 className='text-base  font-semibold'>Ecommerce model 100% functional, build in Next.JS Tailswind CSS and Mongo DB to sell</h3>
+                    </div>
+                  </div>
+                 </a>
+                </Link>
                 <Link href='https://github.com/vituhonorato/pokenext'>
                  <a target="_blank">
                   <div className='py-2 px-2 bg-white rounded-lg my-3 opacity-75 hover:opacity-100 '>
