@@ -62,17 +62,9 @@ const Index = ({repos, user}) => {
                     <div></div>
                     
                     <div className='text-center text-white px-3 text-xl font-semibold'>
-                    Full-Stack WEB Developer. Always
-                            looking for knowledge and
-                            experiences that will add to my
-                            personal development and
-                            contribution to the developer
-                            community!
-                            My goal is to participate in scalable
-                            corporate projects, contributing to
-                            the company's growth and at the
-                            same time gaining know-how in the
-                            programming area.
+                    I am a FullStack WEB developer who is always looking for new knowledge and experiences to improve my career and contribute to the developer community. I am always open to challenges and willing to learn new technologies to create efficient and elegant solutions.
+
+My goal is to become an increasingly complete professional capable of offering solutions that meet the needs of customers and end users.
                     </div>
                     {/* <div className='text-center'> 
                         <p>
