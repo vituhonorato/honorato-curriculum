@@ -12,12 +12,8 @@ return(
             <Link href="/" >
                 <a className='px-2 text-xl font-semibold hover:underline text-white'>Home</a>
             </Link>
-            
-            <Link href="/projects" >
-                <a className='px-2 text-xl font-semibold hover:underline text-white'>Projects</a>
-            </Link>
-            
-            <Link href="/repositorios" >
+              
+            <Link href="/repos" >
                 <a className='px-2 text-xl font-semibold hover:underline text-white'>Repositories</a>
             </Link>
 

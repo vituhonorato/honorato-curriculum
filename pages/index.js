@@ -12,7 +12,7 @@ const Index = ({repos, user}) => {
         <>
        
         <div>
-         <div className="container mx-auto bg-transparent opacity-75 mt-8 mb-8 rounded-lg " >
+         <div className="container h-screen mx-auto bg-transparent opacity-75 mt-8 mb-8 rounded-lg " >
             <div className=''>
                 <div className="grid grid-flow-col auto-cols-max justify-end py-3 px-3  space-x-1">
                     <div className='pt-2 opacity-75  hover:opacity-100'>
@@ -52,7 +52,7 @@ const Index = ({repos, user}) => {
                     </div>
 
                     <div className='grid justify-items-center'>
-                        <img className='rounded-full bg-transparent px-3' src='/images/cartoonperfil1.png' alt='github' height="400px" width="400px"/>
+                        
                         
                     </div>
 
@@ -62,9 +62,7 @@ const Index = ({repos, user}) => {
                     <div></div>
                     
                     <div className='text-center text-white px-3 text-xl font-semibold'>
-                    I am a FullStack WEB developer who is always looking for new knowledge and experiences to improve my career and contribute to the developer community. I am always open to challenges and willing to learn new technologies to create efficient and elegant solutions.
-
-My goal is to become an increasingly complete professional capable of offering solutions that meet the needs of customers and end users.
+                    I am a Fullstack WEB developer who is always looking for new knowledge and experiences to enhance my career and contribute to the developer community. I am always open to challenges and willing to learn new technologies to create efficient and elegant solutions. My goal is to become an increasingly complete professional and able to offer solutions that meet the needs of customers and end users.
                     </div>
                     {/* <div className='text-center'> 
                         <p>
