@@ -47,7 +47,7 @@ const Index = ({repos, user}) => {
                 </div>
                 <div className='grid grid-cols-1 gap-4 flex'>
                     <div>
-                        <h1 className="text-4xl pt-3 text-white  text-center">Hi There, I'm  Victor Honorato</h1><br/>
+                        <h1 className="text-4xl pt-3 text-white  text-center"><span className='font-bold'>Hi There</span>, I'm João Victor Marques Honorato</h1><br/>
                         <h2 className='font-bold font-righteous text-white text-5xl  text-center'>Web Developer</h2>
                     </div>
 
