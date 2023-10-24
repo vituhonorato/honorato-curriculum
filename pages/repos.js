@@ -9,22 +9,22 @@ const Index = ({repos, user}) => {
         {repos && user &&
         <div className='container mx-auto' >
             <div className='text-white text-center py-3 my-7 rounded-lg'>
-                <h1 className='font-bold font-righteous px-3 text-5xl'>My Repositories</h1>
+                <h1 className='font-bold font-righteous px-3 text-xl md:text-3xl  lg:text-4xl '>My Repositories</h1>
             </div>
             
              <div className='grid grid-cols-1 gap-4 justify-items-center'>
              
                 <div className='sm:grid grid-cols-1 gap-4 text-center    lg:flex flex-row  justify-center  text-center'>
-                     <div className='text-white text-center text-3xl font-bold font-righteous '>Public Repos:
-                      <p className='text-tahiti text-8xl'>{user.public_repos} </p>
+                     <div className='text-white text-center text:xl md:text-2xl lg:text-3xl font-bold font-righteous '>Public Repos:
+                      <p className='text-tahiti text-4xl md:text-6xl lg:text-8xl'>{user.public_repos} </p>
                      </div>
-                     <div className='text-white text-center text-3xl font-bold font-righteous'>Followers: 
-                      <p className='text-tahiti text-8xl' >{user.followers}
+                     <div className='text-white text-center text-center text:xl md:text-2xl lg:text-3xl font-bold font-righteous'>Followers: 
+                      <p className='text-tahiti text-4xl md:text-6xl lg:text-8xl' >{user.followers}
                       </p>
                      </div>
-                      <div className='text-white text-center text-3xl font-bold font-righteous'>
+                      <div className='text-white text-center text-center text:xl md:text-2xl lg:text-3xl font-bold font-righteous'>
                             Following: 
-                      <p className='text-tahiti text-8xl'>{user.following }
+                      <p className='text-tahiti text-4xl md:text-6xl lg:text-8xl'>{user.following }
                       </p>
                     </div>
                 </div>
