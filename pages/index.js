@@ -12,13 +12,11 @@ const Home = ({repos, user}) => {
         <>
        
         <div className=''>
-         <div className="container h-screen mx-auto bg-transparent opacity-75 mt-8 mb-8 rounded-lg  " >
-            <div className=''>
-                <div className="grid grid-flow-col auto-cols-max justify-end py-3 px-3  space-x-1">
+        <div className="grid grid-flow-col auto-cols-max justify-end py-3 px-3  space-x-1">
                     <div className='pt-3 px-1 opacity-75  hover:opacity-100'>
                         <Link href="https://github.com/vituhonorato" >
                             <a target="_blank">
-                                <img className=' flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16  bg-white rounded-full' src='/images/github.png' alt='github' height="" width=""/>
+                                <img className=' flex w-6 h-6 md:w-10 md:h-10 lg:w-14 lg:h-14  bg-white rounded-full' src='/images/github.png' alt='github' height="" width=""/>
                             </a>
                            
                         </Link>
@@ -27,7 +25,7 @@ const Home = ({repos, user}) => {
                     
                     <Link href="https://www.linkedin.com/in/jvmh/" target="_blank">
                         <a target="_blank">
-                            <img className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16 opacity-75  hover:opacity-100' src='/images/linkedin.png' alt='linkedin' height="" width=""/>
+                            <img className='flex w-6 h-6 md:w-10 md:h-10 lg:w-14 lg:h-14 opacity-75  hover:opacity-100' src='/images/linkedin.png' alt='linkedin' height="" width=""/>
                         </a>
                     
                     </Link>
@@ -36,7 +34,7 @@ const Home = ({repos, user}) => {
                     
                     <Link href="https://api.whatsapp.com/send?phone=5571987840407&text=Hi%20There,%20how%20can%20i%20help?" target="_blank">
                         <a target="_blank">
-                            <img className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16' src='/images/whatsapp.png' alt='whatsapp' height="" width=""/>
+                            <img className='flex w-6 h-6 md:w-10 md:h-10 lg:w-14 lg:h-14' src='/images/whatsapp.png' alt='whatsapp' height="" width=""/>
                         </a>
                     
                     </Link>
@@ -44,22 +42,15 @@ const Home = ({repos, user}) => {
                    
                 
                  </div>
-                </div>
-                <div className='grid grid-cols-1 gap-4 flex justify-content'>
+         <div className="container h-screen mx-auto bg-transparent opacity-75 mt-8 mb-8 rounded-lg  " >
+            
+                <div className='grid grid-cols-1 gap-4 flex justify-content  flex-col space-y-40  '>
                     <div>
                         <h1 className="text-xl md:text-2xl lg:text-3xl pt-3 text-white  text-center"><span className='font-bold'>Hi There</span>, I'm João Victor Marques Honorato</h1><br/>
                         <h2 className='font-bold font-righteous text-white text-xl md:text-2xl  lg:text-4xl  text-center'>Web Developer</h2>
                     </div>
 
-                    <div className='grid justify-items-center'>
-                        
-                        
-                    </div>
-
-                    <div></div>
-
-                
-                    <div></div>
+                   
                     
                     <div className='text-center text-white px-3 text-base  md:text-lg  lg:text-xl font-semibold'>
                     I am a Fullstack WEB developer who is always looking for new knowledge and experiences to enhance my career and contribute to the developer community. I am always open to challenges and willing to learn new technologies to create efficient and elegant solutions. My goal is to become an increasingly complete professional and able to offer solutions that meet the needs of customers and end users.
@@ -72,7 +63,8 @@ const Home = ({repos, user}) => {
                         Followers: {user.followers} <br/> Following: {user.following }
                         </p>
                     </div> */}
-                    <div className='text-center text-white font-normal font-righteous  text-2xl '>
+                    <div>
+                        <div className='text-center text-white font-normal font-righteous py-3 text-2xl '>
                         <h2>My stacks</h2>
                     </div>
 
@@ -91,27 +83,11 @@ const Home = ({repos, user}) => {
                         <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12'><img className='grayscale' src='/images/postgresql.png' alt='postgresql' height="" width=""/></div>
                         
                     </div>
+                    </div>
+                    
                 
             </div>
             
-            
-            
-            {/* <h2 className='font-medium text-center text-2xl'>My Repositories</h2>
-            <div>{repos.map(repo => {
-                return(
-                <Link href={url + repo.full_name } >
-                    <a target="_blank">
-                    <div className='rounded bg-gray-200 m-8 p-4 hover:shadow-xl opacity-75' key={repo.id}>
-                        <h3 className='font-bold'>{repo.full_name}</h3>
-                        <p>Language: {repo.language}</p>
-                    </div>
-
-                    </a>
-                  
-                    </Link>
-                )
-              })}
-            </div> */}
           </div>
         </div>
         
