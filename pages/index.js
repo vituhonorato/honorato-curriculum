@@ -4,15 +4,15 @@ import React from 'react'
 import getUser from '../utils/getUser'
 
 //FRONTEND
-const Index = ({repos, user}) => {
+const Home = ({repos, user}) => {
     //const url = "https://github.com/"
     
     return(
         
         <>
        
-        <div>
-         <div className="container h-screen mx-auto bg-transparent opacity-75 mt-8 mb-8 rounded-lg justify-center align-middle " >
+        <div className=''>
+         <div className="container h-screen mx-auto bg-transparent opacity-75 mt-8 mb-8 rounded-lg  " >
             <div className=''>
                 <div className="grid grid-flow-col auto-cols-max justify-end py-3 px-3  space-x-1">
                     <div className='pt-3 px-1 opacity-75  hover:opacity-100'>
@@ -76,19 +76,19 @@ const Index = ({repos, user}) => {
                         <h2>My stacks</h2>
                     </div>
 
-                    <div className="flex flex-row  justify-center ">
-                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16' ><img src='/images/html.png' alt='html' height="" width=""/></div>
-                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16'><img src='/images/css.png' alt='css' height="" width=""/></div>
-                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16'><img src='/images/js.png' alt='js' height="" width=""/></div>
-                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16'><img src='/images/typescript.png' alt='typescript' height="" width=""/></div>
-                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16'><img src='/images/react.png' alt='react' height="" width=""/></div>
-                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16'><img src='/images/angular.png' alt='angular' height="" width=""/></div>
-                        <div className='flex p-1 w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16'><img src='/images/tailwind.png' alt='tailwind' height="" width=""/></div>
-                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16'><img src='/images/node-js.png' alt='node' height="" width=""/></div>
-                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16'><img src='/images/nest.png' alt='nest' height="" width=""/></div>
-                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16'><img src='/images/graphql.png' alt='graphql' height="" width=""/></div>
-                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16'><img className=' bg-white rounded-full py-1' src='/images/rest.png' alt='rest' height="" width=""/></div>
-                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16'><img src='/images/postgresql.png' alt='postgresql' height="" width=""/></div>
+                    <div className="flex flex-row  justify-center  ">
+                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12 ' ><img className='grayscale' src='/images/html.png' alt='html' height="" width=""/></div>
+                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12'><img className='grayscale' src='/images/css.png' alt='css' height="" width=""/></div>
+                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12'><img className='grayscale' src='/images/js.png' alt='js' height="" width=""/></div>
+                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12'><img className='grayscale' src='/images/typescript.png' alt='typescript' height="" width=""/></div>
+                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12'><img className='grayscale' src='/images/react.png' alt='react' height="" width=""/></div>
+                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12'><img className='grayscale' src='/images/angular.png' alt='angular' height="" width=""/></div>
+                        <div className='flex p-1 w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12'><img className='grayscale' src='/images/tailwind.png' alt='tailwind' height="" width=""/></div>
+                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12'><img className='grayscale' src='/images/node-js.png' alt='node' height="" width=""/></div>
+                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12'><img className='grayscale' src='/images/nest.png' alt='nest' height="" width=""/></div>
+                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12'><img className='grayscale' src='/images/graphql.png' alt='graphql' height="" width=""/></div>
+                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12'><img className=' bg-white rounded-full py-1' src='/images/rest.png' alt='rest' height="" width=""/></div>
+                        <div className='flex w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12'><img className='grayscale' src='/images/postgresql.png' alt='postgresql' height="" width=""/></div>
                         
                     </div>
                 
@@ -136,4 +136,4 @@ export async function getServerSideProps(context){
         }
     }
 }
-export default Index
+export default Home
